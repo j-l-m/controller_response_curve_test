@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Page Title</title>
+    </head>
+
+    <body>
+
+        <div>
+            <div id="description">
+                <h1>Controller Response Curve Test</h1>
+                <p>This should give a general idea of how controller response curves work</p>
+                <p id="xval">x:</p>
+                <p id="yval">y:</p>
+                <p id="result">result:</p>
+                <select id="curve_selector">
+                    <option value="exponential">Exponential</option>
+                    <option value="linear">Linear </option>
+                    <option value="inverseSCurve">Inverse S-Curve</option>
+                </select>
+                </br></br>
+            </div>
+
+            <div id="drawings" style="position: relative;">
+                <canvas id="graph" width="700" height="700" style="border:1px solid #000000;
+                z-index:0; position: relative; top:0; left:0;"></canvas>
+
+                <canvas id="dynamic" width="700" height="700" style="border:1px solid #000000;
+                z-index:1; position: absolute; top:0; left:0;"></canvas>
+
+                <canvas id="crosshair" width="1000" height="700" style="border:1px solid #000000;
+                position: absolute; top:0; left:700;"></canvas>
+                
+            </div>
+
+            <div id="aim">
+
+            </div>
+        </div>
+
+    </body>
+    <script type="text/javascript" src="./chart.js"></script>
+</html> 
