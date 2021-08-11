@@ -157,9 +157,9 @@ function processControllerInput(g) {
 
         y = curveFunction[currentCurve](x);
 
-        displayXInputArea.innerHTML= "x:    " + componentX;
-        displayYInputArea.innerHTML= "y:    "+ componentY;
-        displayResultArea.innerHTML= "result:  "+ y;
+        displayXInputArea.innerHTML= " " + componentX;
+        displayYInputArea.innerHTML= " "+ componentY;
+        displayResultArea.innerHTML= " "+ y;
 
 
         //update red marker position on curve

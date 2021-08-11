@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Page Title</title>
+        <title>Controller Response Curve Test</title>
     </head>
 
     <body>
@@ -11,9 +11,12 @@
             <div id="description">
                 <h1>Controller Response Curve Test</h1>
                 <p>This should give a general idea of how controller response curves work</p>
-                <p id="xval">x:</p>
-                <p id="yval">y:</p>
-                <p id="result">result:</p>
+                <p>Note: Requires the latest versions of Firefox / Chrome. Plug in a modern game controller e.g.
+                    xbox360 and use the right analog stick to interact with the page.
+                </p>
+                <p>Raw input x: <span id="xval"></span></p>
+                <p>Raw input y: <span id="yval"></span></p>
+                <p>Resulting movment speed multiplier: <span id="result"></span></p>
                 <select id="curve_selector">
                     <option value="exponential">Exponential</option>
                     <option value="linear">Linear </option>
